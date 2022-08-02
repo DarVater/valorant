@@ -1,0 +1,40 @@
+.header {
+    margin: 150px auto 0 auto;
+    max-width: 1430px;
+    display: flex;
+
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #ffffff;
+}
+.header__account {
+    display: flex;
+    align-items: center;
+    margin: 15px 50px;
+}
+.header__account-avatar  img{
+    height: 30px;
+}
+.header__account:hover {
+    cursor: pointer;
+    color: #818181;
+}
+@media (max-width: 760px) {
+    .header__container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.header__container{
+    margin: 0 30px ;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+
+    z-index: 1;
+    justify-content: space-between;
+    background-color: #252a2d;
+    border-radius: 32px 32px 0 0;
+}

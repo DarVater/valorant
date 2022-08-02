@@ -1,0 +1,66 @@
+
+.circle{
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.agents-bg__circle1 {
+    width: 1135px;
+    height: 1135px;
+    left: -950px;
+    top: -400px;
+    background: #FF4656;
+}
+.agents-bg__circle2{
+    width: 235px;
+    height: 235px;
+    left: -700px;
+    top: 1060px;
+    background: #EFEFEF;
+}
+.agents-bg__circle3{
+    width: 32px;
+    height: 32px;
+    left: -736px;
+    top: 1041px;
+    background: #505155;
+}
+.agents-bg__circle4{
+    width: 721px;
+    height: 721px;
+    left: 230px;
+    top: 694px;
+    background: #292C31;
+}
+.agents-bg__circle5{
+    width: 49px;
+    height: 49px;
+    left: 710px;
+    top: 237px;
+    background: #505155;
+}
+.agents-bg__circle6{
+    width: 135px;
+    height: 135px;
+    left: 600px;
+    top: 91px;
+    background: #EFEFEF;
+}
+.agents-bg__circle7{
+    width: 22px;
+    height: 22px;
+    left: 640px;
+    top: 37px;
+    background: #FF4656;
+}
+.agents-page {
+    height: 815px;
+    background-color: #FF4656;
+}
+.agents-bg{
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+}

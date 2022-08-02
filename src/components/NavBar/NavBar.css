@@ -1,0 +1,59 @@
+
+.navbar__logos {
+    display: flex;
+    margin: 0 6px 0 6px;
+}
+.navbar__logos:last-child {
+    padding-right: 0;
+}
+.navbar__logos:last-child {
+    padding-right: 0;
+}
+
+.navbar__company {
+    margin: 23px 0;
+    padding: 0 30px;
+}
+.navbar__company  img{
+    height: 20px;
+}
+.navbar__company img:hover {
+    cursor: pointer;
+}
+.navbar__company:not(:last-child){
+    border-right: 2px solid white;
+}
+
+.navbar__logo {
+    margin: 23px 0;
+    padding: 0 0 0 30px;
+}
+.navbar__logo img:hover {
+    cursor: pointer;
+}
+
+.navbar__logo img{
+    height: 20px;
+}
+
+.navbar__menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: left;
+}
+.navbar__account-menu {
+}
+.navbar__account-name {
+    margin-left: 8px;
+}
+@media (max-width: 760px) {
+    .navbar {
+        flex-direction: column;
+    }
+}

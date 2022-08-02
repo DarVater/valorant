@@ -1,0 +1,10 @@
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 5px 30px;
+}
+.nav-button:hover {
+    cursor: pointer;
+    color: #818181;
+}
