@@ -1,6 +1,5 @@
 .header {
-    margin: 150px auto 0 auto;
-    max-width: 1430px;
+    margin-top: 150px;
     display: flex;
 
 
@@ -28,8 +27,7 @@
     }
 }
 .header__container{
-    margin: 0 30px ;
-    width: 100%;
+    box-shadow: -2px -2px 10px 2px black;
     height: fit-content;
     display: flex;
 

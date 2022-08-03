@@ -12,7 +12,7 @@ const Header = () => {
         {url: 'logout', name: 'LOGOUT'},
     ]
     return (
-        <header className="header ">
+        <header className="header  _container">
             <div className="header__container">
                 <div>
                     <NavBar></NavBar>

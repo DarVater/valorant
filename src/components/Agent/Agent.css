@@ -1,0 +1,115 @@
+.agent {
+    padding-top: 7px;
+    position: relative;
+    width: 220px;
+    height: 540px;
+    margin: 62px 0 0 50px;
+}
+.agent__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.agent__container {
+    position: absolute;
+    width: 100%;
+    height: 533px;
+    border-left: 2px solid #1F2326;
+    border-bottom: 2px solid #1F2326;
+    border-right: 2px solid #1F2326;
+
+}
+.agent__container::before {
+    position: absolute;
+    content: '';
+    width: 213px;
+    height: 7px;
+    right: -2px;
+    top: -7px;
+    border-right: 2px solid #1F2326;
+    border-top: 2px solid #1F2326;
+    z-index: 4;
+}
+.agent__image img {
+    object-position: top;
+}
+.agent__description {
+    position: relative;
+    width: 5px;
+}
+.agent__name {
+    position: absolute;
+    z-index: 4;
+    top: 15px;
+    left: -26px;
+    writing-mode: vertical-lr;
+    font-size: 54px;
+    font-family: 'Londrina Sketch', cursive;
+}
+.agent__location {
+    word-break: initial;
+    width: 20px;
+    position: absolute;
+    z-index: 4;
+    color: #FF4656;
+    top: 15px;
+    left: 26px;
+    font-weight: 800;
+    flex-wrap: nowrap;
+    writing-mode: vertical-lr;
+    font-size: 16px;
+}
+.agent__bar {
+    position: relative;
+    width: inherit;
+}
+.agent__picked {
+    color: black;
+    background: linear-gradient(135deg, transparent 6px, white 0);
+}
+.agent__not-picked {
+    color: white;
+    background: linear-gradient(135deg, transparent 6px, #000000 0);
+}
+.agent__left-corner {
+    position: absolute;
+    border-left: 2px solid #1F2326;
+    width: 9px;
+    height: 9px;
+    transform: rotate(45deg);
+    top: -5px;
+    left: 1px;
+}
+@media (max-width: 1439px) {
+    .agent {
+        width: 280px;
+        height: 540px;
+        margin-left: 80px;
+    }
+
+    .agent__container::before {
+        width: 273px;
+    }
+}
+@media (max-width: 1023px) {
+    .agent {
+        width: 270px;
+        margin-left: 50px;
+    }
+    .agent__container::before {
+        width: 263px;
+    }
+}
+@media (max-width: 424px) {
+    .agent {
+        width: 230px;
+        height: 350px;
+        margin-left: 50px;
+    }
+    .agent__container::before {
+        width: 223px;
+    }
+    .agent__container{
+        height: 343px;
+    }
+}

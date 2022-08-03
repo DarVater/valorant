@@ -1,0 +1,24 @@
+.skills-bar {
+    padding: 14px 20px;
+    z-index: 5;
+    bottom: -14px;
+    left: 14px;
+    position: absolute;
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+}
+.skills-bar__skill {
+    height: 22px;
+    width: 22px;
+    position: relative;
+
+}
+.skills-bar__picked {
+    background-color: white;
+    border: 1px solid black;
+}
+.skills-bar__not-picked {
+    background-color: black;
+    border: 1px solid white;
+}
