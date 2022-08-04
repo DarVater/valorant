@@ -6,7 +6,7 @@ const AgentsSkills = ({skills, picked}) => {
         <div className={`skills-bar ${picked ? 'skills-bar__picked': 'skills-bar__not-picked'}`}>
             {skills.map( skill =>
                 <div key={skill.icon} className="skills-bar__skill">
-                    <img src={skill.icon} alt={skill.title}/>
+                    <img src={picked ? skill.icon[0]: skill.icon[1]} alt={skill.title}/>
                 </div>
             )}
         </div>

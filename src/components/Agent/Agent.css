@@ -100,7 +100,7 @@
         width: 263px;
     }
 }
-@media (max-width: 424px) {
+@media (max-width: 425px) {
     .agent {
         width: 230px;
         height: 350px;

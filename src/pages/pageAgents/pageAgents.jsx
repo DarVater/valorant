@@ -40,22 +40,22 @@ const PageAgents = () => {
                 {
                     type: '', title: '',
                     description: '',
-                    icon: through_w
+                    icon: ['', through_w]
                 },
                 {
                     type: '', title: '',
                     description: '',
-                    icon: skyFell_w
+                    icon: ['', skyFell_w]
                 },
                 {
                     type: '', title: '',
                     description: '',
-                    icon: invitingOrb_w
+                    icon: ['', invitingOrb_w]
                 },
                 {
                     type: '', title: '',
                     description: '',
-                    icon: rebel_w
+                    icon: ['', rebel_w]
                 },
             ],
         },
@@ -68,22 +68,22 @@ const PageAgents = () => {
                 {
                     type: '', title: '',
                     description: '',
-                    icon: surround_w
+                    icon: ['', surround_w]
                 },
                 {
                     type: '', title: '',
                     description: '',
-                    icon: throwUp_w
+                    icon: ['', throwUp_w]
                 },
                 {
                     type: '', title: '',
                     description: '',
-                    icon: jerk_w
+                    icon: ['', jerk_w]
                 },
                 {
                     type: '', title: '',
                     description: '',
-                    icon: massacre_w
+                    icon: ['', massacre_w]
                 },
             ],
         },
@@ -96,22 +96,22 @@ const PageAgents = () => {
                 {
                     type: '', title: '',
                     description: '',
-                    icon: shaveOff_w
+                    icon: ['', shaveOff_w]
                 },
                 {
                     type: '', title: '',
                     description: '',
-                    icon: catenary_w
+                    icon: ['', catenary_w]
                 },
                 {
                     type: '', title: '',
                     description: '',
-                    icon: mindBlowing_w
+                    icon: ['', mindBlowing_w]
                 },
                 {
                     type: '', title: '',
                     description: '',
-                    icon: legolas_w
+                    icon: ['', legolas_w]
                 },
             ],
         },
@@ -122,25 +122,27 @@ const PageAgents = () => {
             picked: true,
             skills: [
                 {
-                    type: '',
-                    title: '',
-                    description: '',
-                    icon: [SlowOrb_b, ]
+                    type: 'BASIC', title: 'Slow Orb',
+                    description: 'Cast out a radianite orb that breaks into a slowing field ' +
+                        'upon impact with the ground.',
+                    icon: [SlowOrb_b, '']
                 },
                 {
-                    type: '', title: '',
-                    description: '',
-                    icon: [AggravateDamage_b, ]
+                    type: 'BASIC', title: 'Aggravate Damage',
+                    description: 'accumulates received damage into a sphere and makes ' +
+                        'a trap out of it',
+                    icon: [AggravateDamage_b, '']
                 },
                 {
-                    type: '', title: '',
-                    description: '',
-                    icon: [HealingOrb_b, ]
+                    type: 'SIGNATURE', title: 'Healing Orb',
+                    description: 'Heal an ally or yourself to full health over a few seconds.',
+                    icon: [HealingOrb_b, '']
                 },
                 {
-                    type: '', title: '',
-                    description: '',
-                    icon: [Resurrection_b, ]
+                    type: 'ULTIMATE', title: 'Resurrection',
+                    description: 'Target a friendly corpse. After a short delay, revive ' +
+                        'them with full health.',
+                    icon: [Resurrection_b, '']
                 },
             ],
         },
@@ -172,8 +174,8 @@ const PageAgents = () => {
                 <div className="agents-page__image ">
                     <img src={agentsPageBG} alt="agents page background"/>
                 </div>
-                <FooterSkills/>
             </div>
+            <FooterSkills skills={agentsList[3].skills}/>
         </div>
     );
 };
